@@ -3,4 +3,6 @@ public class Car {
     public int countDoors;
     public int mileage;
     public String name;
+
+    public int currentGear;
 }
