@@ -1,11 +1,13 @@
-package org.campus02.cards;
+package org.campus02.personstack;
 
-public class CardStack {
+import org.campus02.cards.Card;
+
+public class PersonStack {
 
     private Card[] cards;
     private int counter;
 
-    public CardStack(Card[] cards) {
+    public PersonStack(Card[] cards) {
         this.cards = cards;
         counter = -1;
     }
