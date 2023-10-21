@@ -1,3 +1,5 @@
+package org.campus02.person;
+
 public class DemoPersonApp {
 
     public static void main(String[] args) {

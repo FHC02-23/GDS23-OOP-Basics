@@ -1,3 +1,5 @@
+package org.campus02.car;
+
 public class Car {
     public String colour;
     public int countDoors;
