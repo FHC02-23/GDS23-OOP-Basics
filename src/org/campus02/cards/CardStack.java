@@ -11,13 +11,21 @@ public class CardStack {
     }
 
     public void push(Card card) {
-        counter++;
-        cards[counter] = card;
+        if (counter < cards.length - 1) {
+            counter++;
+            cards[counter] = card;
+        }
+        else
+            System.out.println("stack is full");
     }
 
     public Card pop() {
-        Card element = cards[counter];
-        counter--;
-        return element;
+        if (counter >= 0) {
+            Card element = cards[counter];
+            counter--;
+            return element;
+        }
+        else
+            return null;
     }
 }
