@@ -1,30 +1,28 @@
 package org.campus02.personstack;
 
-import org.campus02.cards.Card;
+public class Stack<T> {
 
-public class PersonStack {
-
-    private Card[] cards;
+    private T[] arr;
     private int counter;
 
-    public PersonStack(Card[] cards) {
-        this.cards = cards;
+    public Stack(T[] arr) {
+        this.arr = arr;
         counter = -1;
     }
 
-    public void push(Card card) {
-        if (counter < cards.length - 1) {
+    public void push(T p) {
+        if (counter < arr.length - 1) {
             counter++;
-            cards[counter] = card;
+            arr[counter] = p;
             //return ;
         }
         else
             System.out.println("stack is full");
     }
 
-    public Card pop() {
+    public T pop() {
         if (counter >= 0) {
-            Card element = cards[counter];
+            T element = arr[counter];
             counter--;
             return element;
         }
